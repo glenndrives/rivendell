@@ -222,7 +222,7 @@ class Update(object):
                     pat+=s.capitalize()+' '
                 else:
                     pat+=s+' '
-            dt_pattern=pat
+            dt_pattern=pat.strip()     # Added .strip() to remove unwanted white space
 
 
         except AttributeError:
